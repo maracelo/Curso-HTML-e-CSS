@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente; consome</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!--<video src="mídia/Vídeo_do_site.mp4" width="300" controls></video>-->
+    <video width="300" controls loop> <!--poster: coloca uma thumbnail-->
+        <source src="mídia/Vídeo_do_site.mp4" type="video/mp4">
+        <source src="mídia/Vídeo_do_site.webm" type="video/webm">
+    </video>
+
+    <h1>Inserindo vídeos do Youtube; vistos por qualquer um.</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5D58q_EyebA" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do vimeo; pago para limitar vizualização.</h1>
+    <iframe src="https://player.vimeo.com/video/83564660?h=40b7ee27ea" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
