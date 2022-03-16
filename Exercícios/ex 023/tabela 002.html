@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        thead{
+            height: 120px;
+            background: #bbbbbb;
+        }
+        tfoot{
+            background: #bbbbbb;
+        }
+        td{
+            width: 400px;
+            text-align: center;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Posição</td>
+                <td>Unidade federativa</td>
+                <td>População (2010)</td>
+                <td>População (2021)</td>
+                <td>Mudança</td>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+            </body>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td>Total de Habitantes</td>
+                    <td class="num">60.859.529</td>
+                </tr>
+            </tfoot>
+        </head>
+    </table>
+</body>
+</html>
