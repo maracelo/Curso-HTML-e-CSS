@@ -6,17 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        caption{
+            font-weight: bold;
+            padding: 5px;
+        }
         table{
             border-collapse: collapse;
+            width: 600px;
         }
         thead{
             height: 120px;
+            background: #838383;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: #838383;
+        }
+        tbody > tr:nth-child(2n) {
             background: #bbbbbb;
         }
         tfoot{
-            background: #bbbbbb;
+            background: #838383;
         }
         td{
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th{
             width: 400px;
             text-align: center;
             border: 1px solid black;
@@ -30,16 +52,199 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <td>Posição</td>
-                <td>Unidade federativa</td>
-                <td>População (2010)</td>
-                <td>População (2021)</td>
-                <td>Mudança</td>
+                <th scope="col">Posição</th>
+                <th scope="col" style="width: 50px;">Unidade federativa</th>
+                <th scope="col" style="width: 50px;">População (2010)</th>
+                <th scope="col" style="width: 50px;">População (2021)</th>
+                <th scope="col" style="width: 50px;">Mudança</th>
             </tr>
             <tbody>
                 <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">41 262 199</td>
+                    <td class="num">46 649 132</td>
+                    <td class="num">+13.05%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                    <td class="num">21 411 923</td>
+                    <td class="num">+9.26%</td>
+                </tr>
                     <td>1</td>
                     <td>São Paulo</td>
                     <td class="num">41 262 199</td>
@@ -57,11 +262,17 @@
             <tfoot>
                 <tr>
                     <td></td>
-                    <td>Total de Habitantes</td>
+                    <th scope="row">Total de Habitantes</td>
                     <td class="num">60.859.529</td>
                 </tr>
             </tfoot>
         </head>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Neque fugit dolorum debitis sunt tempora atque, cupiditate cum commodi! Ad nam doloribus soluta libero corrupti officia fugiat modi odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia qui iste labore velit quisquam esse voluptates aut, fugit, nemo vero, a obcaecati provident minus dolorum officia enim autem natus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nostrum deleniti debitis, consequatur, velit reprehenderit rem vero sed delectus nam aspernatur aliquid id quia nihil incidunt! Dolor, repellat voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Neque fugit dolorum debitis sunt tempora atque, cupiditate cum commodi! Ad nam doloribus soluta libero corrupti officia fugiat modi odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia qui iste labore velit quisquam esse voluptates aut, fugit, nemo vero, a obcaecati provident minus dolorum officia enim autem natus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nostrum deleniti debitis, consequatur, velit reprehenderit rem vero sed delectus nam aspernatur aliquid id quia nihil incidunt! Dolor, repellat voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Neque fugit dolorum debitis sunt tempora atque, cupiditate cum commodi! Ad nam doloribus soluta libero corrupti officia fugiat modi odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia qui iste labore velit quisquam esse voluptates aut, fugit, nemo vero, a obcaecati provident minus dolorum officia enim autem natus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nostrum deleniti debitis, consequatur, velit reprehenderit rem vero sed delectus nam aspernatur aliquid id quia nihil incidunt! Dolor, repellat voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Neque fugit dolorum debitis sunt tempora atque, cupiditate cum commodi! Ad nam doloribus soluta libero corrupti officia fugiat modi odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia qui iste labore velit quisquam esse voluptates aut, fugit, nemo vero, a obcaecati provident minus dolorum officia enim autem natus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nostrum deleniti debitis, consequatur, velit reprehenderit rem vero sed delectus nam aspernatur aliquid id quia nihil incidunt! Dolor, repellat voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Neque fugit dolorum debitis sunt tempora atque, cupiditate cum commodi! Ad nam doloribus soluta libero corrupti officia fugiat modi odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia qui iste labore velit quisquam esse voluptates aut, fugit, nemo vero, a obcaecati provident minus dolorum officia enim autem natus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nostrum deleniti debitis, consequatur, velit reprehenderit rem vero sed delectus nam aspernatur aliquid id quia nihil incidunt! Dolor, repellat voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, assumenda? Neque fugit dolorum debitis sunt tempora atque, cupiditate cum commodi! Ad nam doloribus soluta libero corrupti officia fugiat modi odit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia qui iste labore velit quisquam esse voluptates aut, fugit, nemo vero, a obcaecati provident minus dolorum officia enim autem natus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exercitationem nostrum deleniti debitis, consequatur, velit reprehenderit rem vero sed delectus nam aspernatur aliquid id quia nihil incidunt! Dolor, repellat voluptate.</p>
 </body>
 </html>
